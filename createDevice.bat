@@ -15,9 +15,10 @@ call sdkmanager "build-tools;%apilevel%.0.0" "platforms;android-%apilevel%"
 call sdkmanager "system-images;android-%apilevel%;%type%;%arch%"
 call avdmanager list device
 
+echo Device id/name:
 set /p device=
 mkdir devices
 call avdmanager create avd -n %name% -k "system-images;android-%apilevel%;%type%;%arch%" -d %device% -p devices\%name%
 mkdir .android\avd
-rem move %name%.ini .android\avd\%name%.ini
-echo "cd .. && call ..\activate.bat && emulator -avd %name%" > devices\%name%_start.bat
+
+echo cd .. ^&^& call ..\activate.bat ^&^& emulator -avd "%name%" > devices\%name%_start.bat

@@ -1,3 +1,5 @@
+Heavily in progress some functions are not working noted at end of file.
+
 Requirements: windows pc
 
 Deployment:
@@ -11,3 +13,6 @@ Deployment:
 
 Usage:
 `devices\{device-name}_start.bat` or in command window `activate.bat` then `emulator -avd {device-name}`
+
+Currently working:
+Running android with whole numbered api levels
