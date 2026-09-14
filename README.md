@@ -1,4 +1,4 @@
-Heavily in progress some functions are not working noted at end of file.
+Heavily in progress some functions are not working.
 
 Requirements: windows pc
 
