@@ -27,4 +27,4 @@ mkdir devices
 call avdmanager create avd -n %name% -k "system-images;android-%apilevel%;%type%;%arch%" -d %device% -p devices\%name%
 mkdir .android\avd
 
-echo cd .. ^&^& call ..\activate.bat ^&^& emulator -avd "%name%" > devices\%name%_start.bat
+echo cd .. ^&^& call activate.bat ^&^& emulator -avd "%name%" > devices\%name%_start.bat
