@@ -2,4 +2,4 @@ SET PATH=%cd%\emulator;%cd%\emulator\lib64\qt\lib;%cd%\emulator\lib64;%cd%\cmdli
 set ANDROID_HOME=%cd%
 set ANDROID_AVD_HOME=%cd%\.android\avd
 set ANDROID_SDK_HOME=%cd%
-set HOME==%cd%
+set HOME=%cd%

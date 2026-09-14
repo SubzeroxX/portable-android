@@ -2,12 +2,18 @@ call activate
 call setupDependencies
 call sdkmanager emulator platform-tools
 cls
-call sdkmanager --list
+for /f %%i in ('call sdkmanager --list ^| findstr /i "system-images;android-" ^| sort') do echo %%i
+
+echo:
+echo:
+echo output scheme:
+echo system-images;android-{api-level};{type};{arch}
+
 echo Api Level:
 set /p apilevel=
 echo Type: [google_apis google_apis_playstore default]
 set /p type=
-echo Arch: [x86 x86_64]
+echo Arch: [x86_64 arm64-v8a]
 set /p arch=
 echo Dev name:
 set /p name=
